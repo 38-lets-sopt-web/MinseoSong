@@ -259,7 +259,7 @@ section h2 {
 .btn-list {
   display: flex;
   justify-content: center;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
 
 .btn {
@@ -325,4 +325,12 @@ section h2 {
     content: "🖤";
     margin-left: var(--spacing-xs);
   }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-2xl);
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
