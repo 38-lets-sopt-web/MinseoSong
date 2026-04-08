@@ -243,7 +243,8 @@ section h2 {
 
 .interest img {
   width: 100%;
-  height: var(--img-sm);
+  aspect-ratio: 4 / 4;
+  height: auto;
   object-fit: cover;
 }
 
