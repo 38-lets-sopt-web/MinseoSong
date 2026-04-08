@@ -220,3 +220,87 @@ section h2 {
     transform: translateX(-50%);
   }
 }
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.interest {
+  background: var(--white-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 10px var(--shadow-medium);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px var(--shadow-dark);
+  }
+}
+
+.interest img {
+  width: 100%;
+  height: var(--img-sm);
+  object-fit: cover;
+}
+
+.interest-item {
+  padding: var(--spacing-md) var(--spacing-xs);
+  p {
+    font-size: var(--text-lg);
+    font-weight: var(--weight-semibold);
+    margin-bottom: var(--spacing-xs);
+  }
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.btn {
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  font-size: var(--text-md);
+  font-weight: var(--weight-medium);
+  transition: background-color 0.3s ease;
+  color: var(--white-color);
+}
+
+.btn.like {
+  background-color: var(--pink-color);
+  &:hover {
+    background-color: var(--background-color);
+  }
+}
+
+.btn.hate {
+  background-color: var(--grey-color);
+  &:hover {
+    background-color: var(--black-color);
+  }
+}
+
+@media (max-width: 1300px) {
+  .interest-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .interest-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 830px) {
+  .interest-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

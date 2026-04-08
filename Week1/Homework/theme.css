@@ -2,7 +2,9 @@
   /* Color */
   --white-color: #ffffff;
   --black-color: #000000;
+  --grey-color: #4d4d4d;
   --background-color: #f7a7bb;
+  --pink-color: #facad6;
   --shadow-light: rgba(0, 0, 0, 0.1);
   --shadow-medium: rgba(0, 0, 0, 0.2);
   --shadow-dark: rgba(0, 0, 0, 0.3);
