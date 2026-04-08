@@ -45,4 +45,9 @@
   --icon-sm: 3.2rem;
   --icon-md: 4rem;
   --icon-lg: 4.8rem;
+
+  /* Img */
+  --img-sm: 20rem;
+  --img-md: 25rem;
+  --img-lg: 30rem;
 }
