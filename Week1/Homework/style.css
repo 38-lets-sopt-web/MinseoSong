@@ -304,3 +304,25 @@ section h2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.message {
+  background-color: var(--white-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: 0 4px 10px var(--shadow-dark);
+  font-weight: var(--weight-bold);
+
+  p {
+    padding: var(--spacing-md);
+  }
+
+  p::before {
+    content: "🩷";
+    margin-right: var(--spacing-xs);
+  }
+
+  p::after {
+    content: "🖤";
+    margin-left: var(--spacing-xs);
+  }
+}
