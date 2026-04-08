@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>[1주차] HTML, CSS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="theme.css">
     </head>
@@ -25,5 +26,37 @@
                 <img src="./images/github-icon.png" alt="github-logo" class="github-logo">
             </a>
         </header>
+
+        <main>
+            <!-- Sidebar -->
+            <nav class="sidebar" aria-label="사이드 목차">
+                <ul class="sidebar-list">
+                    <li><a href="#photo-dump" class="sidebar-list-item">포토덤프</a></li>
+                    <li><a href="#photo-list" class="sidebar-list-item">사진첩</a></li>
+                    <li><a href="#my-interest" class="sidebar-list-item">내 관심사</a></li>
+                    <li><a href="#to-friend" class="sidebar-list-item">웹왔니 친구들에게</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Photo Dump -->
+                 <section id="photo-dump">
+                    <h2>📸 포토덤프</h2>
+                 </section>
+                <!-- Photo List -->
+                 <section id="photo-list">
+                    <h2>📷 사진첩</h2>
+                 </section>
+                <!-- My Interest -->
+                 <section id="my-interest">
+                    <h2>🖤 내 관심사</h2>
+                 </section>
+                <!-- To Friend -->
+                 <section id="to-friend">
+                    <h2>💌 웹왔니 친구들에게</h2>
+                 </section>
+            </div>
+        </main>
     </body>
 </html>
