@@ -1,184 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>[1주차] HTML, CSS</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="theme.css">
-    </head>
-    <body>
-        <header>
-            <img src="./images/mini-profile-logo.png" alt="mini-profile-logo" class="mini-profile-logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[1주차] HTML, CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="./images/mini-profile-logo.png"
+        alt="mini-profile-logo"
+        class="mini-profile-logo"
+      />
 
-            <hgroup class="mini-profile-title">
-                <h1>밍서의 블로그</h1>
-                <h2>환영합니다!</h2>
-            </hgroup>
+      <hgroup class="mini-profile-title">
+        <h1>밍서의 블로그</h1>
+        <h2>환영합니다!</h2>
+      </hgroup>
 
-            <a
-                href="https://github.com/MinseoSONG"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="깃허브 프로필로 이동"
-                >
-                <img src="./images/github-icon.png" alt="github-logo" class="github-logo">
-            </a>
-        </header>
+      <a
+        href="https://github.com/MinseoSONG"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="깃허브 프로필로 이동"
+      >
+        <img
+          src="./images/github-icon.png"
+          alt="github-logo"
+          class="github-logo"
+        />
+      </a>
+    </header>
 
-        <main>
-            <!-- Sidebar -->
-            <nav class="sidebar" aria-label="사이드 목차">
-                <ul class="sidebar-list">
-                    <li><a href="#photo-dump" class="sidebar-list-item">포토덤프</a></li>
-                    <li><a href="#photo-list" class="sidebar-list-item">사진첩</a></li>
-                    <li><a href="#my-interest" class="sidebar-list-item">내 관심사</a></li>
-                    <li><a href="#to-friend" class="sidebar-list-item">웹왔니 친구들에게</a></li>
-                </ul>
-            </nav>
+    <main>
+      <!-- Sidebar -->
+      <nav class="sidebar" aria-label="사이드 목차">
+        <ul class="sidebar-list">
+          <li><a href="#photo-dump" class="sidebar-list-item">포토덤프</a></li>
+          <li><a href="#photo-list" class="sidebar-list-item">사진첩</a></li>
+          <li>
+            <a href="#my-interest" class="sidebar-list-item">내 관심사</a>
+          </li>
+          <li>
+            <a href="#to-friend" class="sidebar-list-item">웹왔니 친구들에게</a>
+          </li>
+        </ul>
+      </nav>
 
-            <!-- Main Content -->
-            <div class="main-content">
-                <!-- Photo Dump -->
-                 <section id="photo-dump">
-                    <h2>📸 포토덤프</h2>
-                    <div class="photo-grid">
-                        <div class="photo-grid-item">
-                            <img src="./images/photo-dump/birthday.png" alt="birthday">
-                        </div>
-                        <div class="photo-grid-item">
-                            <img src="./images/photo-dump/gongbaek.png" alt="gongbaek">
-                        </div>
-                        <div class="photo-grid-item">
-                            <img src="./images/photo-dump/ski.png" alt="ski">
-                        </div>
-                        <div class="photo-grid-item">
-                            <img src="./images/photo-dump/me.png" alt="me">
-                        </div>
-                        <div class="photo-grid-item">
-                            <img src="./images/photo-dump/deprommet.png" alt="deprommet">
-                        </div>
-                        <div class="photo-grid-item">
-                            <img src="./images/photo-dump/certi.png" alt="certi">
-                        </div>
-                    </div>
-                 </section>
-
-                <!-- Photo List -->
-                 <section id="photo-list">
-                    <h2>📷 사진첩: 눈멍이</h2>
-                    <div class="scroll-container">
-                        <div class="scroll-content">
-                            <img src="./images/photo-list/nunmeong1.png" alt="nunmeong1"/>
-                            <img src="./images/photo-list/nunmeong2.png" alt="nunmeong2"/>
-                            <img src="./images/photo-list/nunmeong3.png" alt="nunmeong3"/>
-                            <img src="./images/photo-list/nunmeong4.png" alt="nunmeong4"/>
-                            <img src="./images/photo-list/nunmeong5.png" alt="nunmeong5"/>
-                            <img src="./images/photo-list/nunmeong6.png" alt="nunmeong6"/>
-                            <img src="./images/photo-list/nunmeong7.png" alt="nunmeong7"/>
-
-                            <img src="./images/photo-list/nunmeong1.png" alt="nunmeong1" aria-hidden="true"/>
-                            <img src="./images/photo-list/nunmeong2.png" alt="nunmeong2" aria-hidden="true"/>
-                            <img src="./images/photo-list/nunmeong3.png" alt="nunmeong3" aria-hidden="true"/>
-                            <img src="./images/photo-list/nunmeong4.png" alt="nunmeong4" aria-hidden="true"/>
-                            <img src="./images/photo-list/nunmeong5.png" alt="nunmeong5" aria-hidden="true"/>
-                            <img src="./images/photo-list/nunmeong6.png" alt="nunmeong6" aria-hidden="true"/>
-                            <img src="./images/photo-list/nunmeong7.png" alt="nunmeong7" aria-hidden="true"/>
-                        </div>
-                    </div>
-                 </section>
-
-                <!-- My Interest -->
-                 <section id="my-interest">
-                    <h2>🖤 내 관심사</h2>
-                    <ul class="interest-grid">
-                        <li class="interest">
-                            <img src="./images/my-interest/mara.png" alt="mara"/>
-                            <div class="interest-item">
-                                <p>🥵 마라음식</p>
-                                <div class="btn-list">
-                                    <button type="button" class="btn like">좋아요</button>
-                                    <button type="button" class="btn hate">싫어요</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="interest">
-                            <img src="./images/my-interest/cute.png" alt="cute"/>
-                            <div class="interest-item">
-                                <p>🩷 귀여운 이모티콘</p>
-                                <div class="btn-list">
-                                    <button type="button" class="btn like">좋아요</button>
-                                    <button type="button" class="btn hate">싫어요</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="interest">
-                            <img src="./images/my-interest/toji.png" alt="toji"/>
-                            <div class="interest-item">
-                                <p>🔥 토우지</p>
-                                <div class="btn-list">
-                                    <button type="button" class="btn like">좋아요</button>
-                                    <button type="button" class="btn hate">싫어요</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="interest">
-                            <img src="./images/my-interest/fish.png" alt="fish"/>
-                            <div class="interest-item">
-                                <p>🐟 회</p>
-                                <div class="btn-list">
-                                    <button type="button" class="btn like">좋아요</button>
-                                    <button type="button" class="btn hate">싫어요</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="interest">
-                            <img src="./images/my-interest/minecraft.png" alt="minecraft"/>
-                            <div class="interest-item">
-                                <p>🧱 마인크래프트</p>
-                                <div class="btn-list">
-                                    <button type="button" class="btn like">좋아요</button>
-                                    <button type="button" class="btn hate">싫어요</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="interest">
-                            <img src="./images/my-interest/chicken.png" alt="chicken"/>
-                            <div class="interest-item">
-                                <p>🍗 닭발</p>
-                                <div class="btn-list">
-                                    <button type="button" class="btn like">좋아요</button>
-                                    <button type="button" class="btn hate">싫어요</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="interest">
-                            <img src="./images/my-interest/choisan.png" alt="choisan"/>
-                            <div class="interest-item">
-                                <p>💪 최산</p>
-                                <div class="btn-list">
-                                    <button type="button" class="btn like">좋아요</button>
-                                    <button type="button" class="btn hate">싫어요</button>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                 </section>
-
-                <!-- To Friend -->
-                 <section id="to-friend">
-                    <h2>💌 웹왔니 친구들에게</h2>
-                    <div class="message">
-                        <p>웹왔니 화이팅 !!</p>
-                        <p>킹왕짱 웹개발자가 되어보자</p>
-                    </div>
-                 </section>
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Photo Dump -->
+        <section id="photo-dump">
+          <h2>📸 포토덤프</h2>
+          <div class="photo-grid">
+            <div class="photo-grid-item">
+              <img src="./images/photo-dump/birthday.png" alt="birthday" />
             </div>
-        </main>
+            <div class="photo-grid-item">
+              <img src="./images/photo-dump/gongbaek.png" alt="gongbaek" />
+            </div>
+            <div class="photo-grid-item">
+              <img src="./images/photo-dump/ski.png" alt="ski" />
+            </div>
+            <div class="photo-grid-item">
+              <img src="./images/photo-dump/me.png" alt="me" />
+            </div>
+            <div class="photo-grid-item">
+              <img src="./images/photo-dump/deprommet.png" alt="deprommet" />
+            </div>
+            <div class="photo-grid-item">
+              <img src="./images/photo-dump/certi.png" alt="certi" />
+            </div>
+          </div>
+        </section>
 
-        <footer>
-            <p>끗✨</p>
-        </footer>
-    </body>
+        <!-- Photo List -->
+        <section id="photo-list">
+          <h2>📷 사진첩: 눈멍이</h2>
+          <div class="scroll-container">
+            <div class="scroll-content">
+              <img src="./images/photo-list/nunmeong1.png" alt="nunmeong1" />
+              <img src="./images/photo-list/nunmeong2.png" alt="nunmeong2" />
+              <img src="./images/photo-list/nunmeong3.png" alt="nunmeong3" />
+              <img src="./images/photo-list/nunmeong4.png" alt="nunmeong4" />
+              <img src="./images/photo-list/nunmeong5.png" alt="nunmeong5" />
+              <img src="./images/photo-list/nunmeong6.png" alt="nunmeong6" />
+              <img src="./images/photo-list/nunmeong7.png" alt="nunmeong7" />
+
+              <img
+                src="./images/photo-list/nunmeong1.png"
+                alt="nunmeong1"
+                aria-hidden="true"
+              />
+              <img
+                src="./images/photo-list/nunmeong2.png"
+                alt="nunmeong2"
+                aria-hidden="true"
+              />
+              <img
+                src="./images/photo-list/nunmeong3.png"
+                alt="nunmeong3"
+                aria-hidden="true"
+              />
+              <img
+                src="./images/photo-list/nunmeong4.png"
+                alt="nunmeong4"
+                aria-hidden="true"
+              />
+              <img
+                src="./images/photo-list/nunmeong5.png"
+                alt="nunmeong5"
+                aria-hidden="true"
+              />
+              <img
+                src="./images/photo-list/nunmeong6.png"
+                alt="nunmeong6"
+                aria-hidden="true"
+              />
+              <img
+                src="./images/photo-list/nunmeong7.png"
+                alt="nunmeong7"
+                aria-hidden="true"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- My Interest -->
+        <section id="my-interest">
+          <h2>🖤 내 관심사</h2>
+          <ul class="interest-grid">
+            <li class="interest">
+              <img src="./images/my-interest/mara.png" alt="mara" />
+              <div class="interest-item">
+                <p>🥵 마라음식</p>
+                <div class="btn-list">
+                  <button type="button" class="btn like">좋아요</button>
+                  <button type="button" class="btn hate">싫어요</button>
+                </div>
+              </div>
+            </li>
+            <li class="interest">
+              <img src="./images/my-interest/cute.png" alt="cute" />
+              <div class="interest-item">
+                <p>🩷 귀여운 이모티콘</p>
+                <div class="btn-list">
+                  <button type="button" class="btn like">좋아요</button>
+                  <button type="button" class="btn hate">싫어요</button>
+                </div>
+              </div>
+            </li>
+            <li class="interest">
+              <img src="./images/my-interest/toji.png" alt="toji" />
+              <div class="interest-item">
+                <p>🔥 토우지</p>
+                <div class="btn-list">
+                  <button type="button" class="btn like">좋아요</button>
+                  <button type="button" class="btn hate">싫어요</button>
+                </div>
+              </div>
+            </li>
+            <li class="interest">
+              <img src="./images/my-interest/fish.png" alt="fish" />
+              <div class="interest-item">
+                <p>🐟 회</p>
+                <div class="btn-list">
+                  <button type="button" class="btn like">좋아요</button>
+                  <button type="button" class="btn hate">싫어요</button>
+                </div>
+              </div>
+            </li>
+            <li class="interest">
+              <img src="./images/my-interest/minecraft.png" alt="minecraft" />
+              <div class="interest-item">
+                <p>🧱 마인크래프트</p>
+                <div class="btn-list">
+                  <button type="button" class="btn like">좋아요</button>
+                  <button type="button" class="btn hate">싫어요</button>
+                </div>
+              </div>
+            </li>
+            <li class="interest">
+              <img src="./images/my-interest/chicken.png" alt="chicken" />
+              <div class="interest-item">
+                <p>🍗 닭발</p>
+                <div class="btn-list">
+                  <button type="button" class="btn like">좋아요</button>
+                  <button type="button" class="btn hate">싫어요</button>
+                </div>
+              </div>
+            </li>
+            <li class="interest">
+              <img src="./images/my-interest/choisan.png" alt="choisan" />
+              <div class="interest-item">
+                <p>💪 최산</p>
+                <div class="btn-list">
+                  <button type="button" class="btn like">좋아요</button>
+                  <button type="button" class="btn hate">싫어요</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- To Friend -->
+        <section id="to-friend">
+          <h2>💌 웹왔니 친구들에게</h2>
+          <div class="message">
+            <p>웹왔니 화이팅 !!</p>
+            <p>킹왕짱 웹개발자가 되어보자</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>끗✨</p>
+    </footer>
+  </body>
 </html>
