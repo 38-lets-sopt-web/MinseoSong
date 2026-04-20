@@ -96,7 +96,3 @@ export const initialExpenses = [
     amount: -5000,
   },
 ];
-
-if (!localStorage.getItem("expenseData")) {
-  localStorage.setItem("expenseData", JSON.stringify(initialExpenses));
-}
