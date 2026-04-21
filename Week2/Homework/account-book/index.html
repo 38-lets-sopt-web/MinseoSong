@@ -32,8 +32,141 @@
       </div>
 
       <div class="header-box header-right">
-        <p id="header-count">SOPT 38th WEB</p>
+        <p>SOPT 38th WEB</p>
       </div>
     </header>
+
+    <main class="container">
+      <section class="filter-section">
+        <h2 class="section-title">검색 필터</h2>
+
+        <form id="filter-form" class="filter-grid">
+          <div class="filter-item filter-item-full">
+            <label for="filter-keyword">통합 검색</label>
+            <input
+              type="text"
+              id="filter-keyword"
+              name="keyword"
+              placeholder="제목, 금액, 날짜, 유형, 카테고리, 결제수단 검색"
+            />
+          </div>
+
+          <div class="filter-item">
+            <label for="filter-type">유형</label>
+            <select id="filter-type" name="type"></select>
+          </div>
+
+          <div class="filter-item">
+            <label for="filter-category">카테고리</label>
+            <select id="filter-category" name="category"></select>
+          </div>
+
+          <div class="filter-item">
+            <label for="filter-payment">결제수단</label>
+            <select id="filter-payment" name="payment"></select>
+          </div>
+
+          <div class="filter-actions">
+            <button type="submit">적용</button>
+            <button type="button" id="reset-filter-button">초기화</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="table-section">
+        <div class="table-header">
+          <div class="table-header-left">
+            <select id="sort-order">
+              <option value="desc">날짜 내림차순</option>
+              <option value="asc">날짜 오름차순</option>
+            </select>
+          </div>
+
+          <div class="table-header-right">
+            <button type="button" id="delete-button">선택 삭제</button>
+            <button type="button" id="open-modal-button">추가</button>
+          </div>
+        </div>
+
+        <table class="expense-table">
+          <thead>
+            <tr>
+              <th><input type="checkbox" id="select-all" /></th>
+              <th>제목</th>
+              <th>금액</th>
+              <th>날짜</th>
+              <th>카테고리</th>
+              <th>결제수단</th>
+            </tr>
+          </thead>
+          <tbody id="expense-table-body"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="6" id="total-row">합계: 0원</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+
+    <div id="add-modal" class="modal hidden">
+      <div class="modal-backdrop" data-close="add-modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>내역 추가</h2>
+          <button
+            type="button"
+            class="modal-close-button"
+            data-close="add-modal"
+            aria-label="닫기"
+          >
+            ×
+          </button>
+        </div>
+
+        <form id="add-form" class="modal-form">
+          <label for="add-title">제목</label>
+          <input type="text" id="add-title" name="title" />
+
+          <label for="add-date">날짜</label>
+          <input type="date" id="add-date" name="date" />
+
+          <label for="add-type">유형</label>
+          <select id="add-type" name="type"></select>
+
+          <label for="add-category">카테고리</label>
+          <select id="add-category" name="category"></select>
+
+          <label for="add-payment">결제수단</label>
+          <select id="add-payment" name="payment"></select>
+
+          <label for="add-amount">금액</label>
+          <input type="number" id="add-amount" name="amount" min="0" />
+
+          <button type="submit" class="submit-button">추가</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="detail-modal" class="modal hidden">
+      <div class="modal-backdrop" data-close="detail-modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>상세 내역</h2>
+          <button
+            type="button"
+            class="modal-close-button"
+            data-close="detail-modal"
+            aria-label="닫기"
+          >
+            ×
+          </button>
+        </div>
+
+        <div id="detail-content" class="detail-content"></div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
