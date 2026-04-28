@@ -31,11 +31,3 @@ export function getExpenses() {
 export function saveExpenses(expenses) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(expenses));
 }
-
-export function getNextExpenseId(expenses) {
-  if (expenses.length === 0) {
-    return 1;
-  }
-
-  return Math.max(...expenses.map((expense) => Number(expense.id))) + 1;
-}

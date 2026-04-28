@@ -35,3 +35,11 @@ export function getExpenseType(amount) {
 export function getAmountClassName(amount) {
   return Number(amount) >= 0 ? "amount-income" : "amount-expense";
 }
+
+export function getNextExpenseId(expenses) {
+  if (expenses.length === 0) {
+    return 1;
+  }
+
+  return Math.max(...expenses.map((expense) => Number(expense.id))) + 1;
+}

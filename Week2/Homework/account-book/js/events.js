@@ -3,9 +3,9 @@ import {
   EXPENSE_CATEGORY_OPTIONS,
   EXPENSE_PAYMENT_OPTIONS,
 } from "./constants.js";
-import { fillSelect } from "./utils.js";
+import { fillSelect, getNextExpenseId } from "./utils.js";
 import { state } from "./state.js";
-import { getExpenses, saveExpenses, getNextExpenseId } from "./storage.js";
+import { getExpenses, saveExpenses } from "./storage.js";
 import { closeModal, openModal } from "./modal.js";
 import { render, renderDetailModal, syncSelectAllStatus } from "./render.js";
 
