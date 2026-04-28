@@ -50,11 +50,10 @@ h1 {
 }
 
 .icon-button {
+  all: unset;
   width: var(--icon-md);
   height: var(--icon-md);
-  border: none;
   cursor: pointer;
-  background-color: transparent;
   font-size: 2.4rem;
 }
 
