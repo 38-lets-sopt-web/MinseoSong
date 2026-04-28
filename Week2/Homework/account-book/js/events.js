@@ -18,6 +18,7 @@ const resetFilterButton = document.getElementById("reset-filter-button");
 
 const sortOrder = document.getElementById("sort-order");
 const selectAll = document.getElementById("select-all");
+const tableBody = document.getElementById("expense-table-body");
 
 const openModalButton = document.getElementById("open-modal-button");
 const deleteButton = document.getElementById("delete-button");
@@ -50,10 +51,7 @@ function updateFiltersFromInputs() {
 
 function resetFilters() {
   filterForm.reset();
-  state.filters.keyword = "";
-  state.filters.type = "";
-  state.filters.category = "";
-  state.filters.payment = "";
+  updateFiltersFromInputs();
   render();
 }
 
@@ -116,43 +114,53 @@ function submitAddForm(event) {
   render();
 }
 
-function handleDocumentClick(event) {
+function handleModalClick(event, modal) {
   const target = event.target;
 
   if (!(target instanceof HTMLElement)) {
     return;
   }
 
-  const closeTarget = target.dataset.close;
-
-  if (closeTarget === "add-modal") {
-    closeModal(addModal);
+  if (target.dataset.close === modal.id) {
+    closeModal(modal);
   }
+}
 
-  if (closeTarget === "detail-modal") {
-    closeModal(detailModal);
+function handleTableClick(event) {
+  const target = event.target;
+
+  if (!(target instanceof HTMLElement)) {
+    return;
   }
 
   if (target.matches(".expense-title-button")) {
     renderDetailModal(target.dataset.detailId);
   }
+}
 
-  if (target.id === "select-all") {
-    const isChecked = target.checked;
-    const checkboxes = document.querySelectorAll(".row-checkbox");
+function handleSelectAllChange() {
+  const isChecked = selectAll.checked;
+  const checkboxes = document.querySelectorAll(".row-checkbox");
 
-    checkboxes.forEach((checkbox) => {
-      checkbox.checked = isChecked;
-      const id = Number(checkbox.dataset.id);
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = isChecked;
+    const id = Number(checkbox.dataset.id);
 
-      if (isChecked) {
-        state.selectedIds.add(id);
-      } else {
-        state.selectedIds.delete(id);
-      }
-    });
+    if (isChecked) {
+      state.selectedIds.add(id);
+    } else {
+      state.selectedIds.delete(id);
+    }
+  });
 
-    syncSelectAllStatus();
+  syncSelectAllStatus();
+}
+
+function handleTableChange(event) {
+  const target = event.target;
+
+  if (!(target instanceof HTMLInputElement)) {
+    return;
   }
 
   if (target.matches(".row-checkbox")) {
@@ -194,5 +202,15 @@ export function bindEvents() {
 
   addForm.addEventListener("submit", submitAddForm);
 
-  document.addEventListener("click", handleDocumentClick);
+  addModal.addEventListener("click", (event) => {
+    handleModalClick(event, addModal);
+  });
+
+  detailModal.addEventListener("click", (event) => {
+    handleModalClick(event, detailModal);
+  });
+
+  selectAll.addEventListener("change", handleSelectAllChange);
+  tableBody.addEventListener("click", handleTableClick);
+  tableBody.addEventListener("change", handleTableChange);
 }
