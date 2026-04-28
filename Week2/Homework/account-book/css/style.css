@@ -32,28 +32,19 @@ body {
   z-index: 100;
 }
 
-.header-box {
-  display: flex;
-  align-items: center;
+.page-header :first-child {
+  justify-self: start;
 }
 
-.header-left {
-  justify-content: flex-start;
+.page-header :nth-child(2) {
+  justify-self: center;
 }
 
-.header-center {
-  justify-content: center;
+.page-header :last-child {
+  justify-self: end;
 }
 
-.header-right {
-  justify-content: flex-end;
-}
-
-.header-title-group {
-  text-align: center;
-}
-
-.header-title-group h1 {
+h1 {
   font-size: var(--text-xl);
   font-weight: var(--weight-bold);
 }
