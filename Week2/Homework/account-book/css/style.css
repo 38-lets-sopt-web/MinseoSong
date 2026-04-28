@@ -214,18 +214,13 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .filter-item-full,
-  .filter-actions {
-    grid-column: auto;
-  }
-
   .table-header {
     flex-direction: column;
     align-items: stretch;
   }
 
   .table-header-right {
-    justify-content: stretch;
+    width: 100%;
   }
 
   .table-header-right button {
