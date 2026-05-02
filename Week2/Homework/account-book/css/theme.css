@@ -1,0 +1,61 @@
+:root {
+  /* Color */
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --grey-color: #4d4d4d;
+  --background-color: #f7a7bb;
+  --pink-color: #facad6;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.2);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+
+  /* Typography */
+  --text-xs: 1.2rem;
+  --text-sm: 1.4rem;
+  --text-base: 1.6rem;
+  --text-lg: 1.8rem;
+  --text-xl: 2rem;
+  --text-2xl: 2.4rem;
+  --text-3xl: 3rem;
+  --text-4xl: 3.6rem;
+
+  /* Font Weight */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Border Radius */
+  --radius-xs: 0.4rem;
+  --radius-sm: 0.8rem;
+  --radius-md: 1.2rem;
+  --radius-lg: 1.6rem;
+  --radius-xl: 2.4rem;
+  --radius-round: 9999px;
+
+  /* Spacing */
+  --spacing-xxs: 0.4rem;
+  --spacing-xs: 0.8rem;
+  --spacing-sm: 1.2rem;
+  --spacing-md: 1.6rem;
+  --spacing-lg: 2.4rem;
+  --spacing-xl: 3.2rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 4.8rem;
+
+  /* Icon */
+  --icon-sm: 3.2rem;
+  --icon-md: 4rem;
+  --icon-lg: 4.8rem;
+
+  /* Img */
+  --img-sm: 20rem;
+  --img-md: 25rem;
+  --img-lg: 30rem;
+
+  --container-width: 120rem;
+  --header-height: 8rem;
+  --input-height: 4.4rem;
+  --button-height: 4.4rem;
+  --table-border: 0.1rem solid #d9d9d9;
+}
